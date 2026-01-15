@@ -7,14 +7,21 @@ const HeroSection = () => {
       el.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
-    <section className="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+            backgroundSize: "40px 40px",
+          }}
+        />
       </div>
 
       {/* Gradient Orb */}
@@ -32,18 +39,28 @@ const HeroSection = () => {
           </div>
 
           {/* Name */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-hero-foreground mb-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <h1
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-hero-foreground mb-6 animate-fade-in"
+            style={{ animationDelay: "0.1s" }}
+          >
             Tadeu Tovar
           </h1>
 
           {/* Title */}
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h2
+            className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary mb-6 animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
             Automação, Dados & IA para Processos Empresariais
           </h2>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-hero-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Transformo processos manuais em fluxos automáticos, integro sistemas e converto dados em decisões estratégicas.
+          <p
+            className="text-lg md:text-xl text-hero-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in"
+            style={{ animationDelay: "0.3s" }}
+          >
+            Transformo processos manuais em fluxos automáticos, integro sistemas e
+            converto dados em decisões estratégicas.
           </p>
 
           {/* CTA Buttons */}
@@ -67,15 +84,19 @@ const HeroSection = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <div
+            className="flex items-center justify-center gap-6 animate-fade-in"
+            style={{ animationDelay: "0.5s" }}
+          >
             <a
-              href="https://www.linkedin.com/in/tadeutovar/"
+              href="https://linkedin.com/in/tadeutovar/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 text-hero-foreground/60 hover:text-primary hover:bg-primary/10 rounded-full transition-all duration-300"
             >
               <Linkedin size={22} />
             </a>
+
             <a
               href="https://github.com/tadeutovar/"
               target="_blank"
@@ -84,6 +105,7 @@ const HeroSection = () => {
             >
               <Github size={22} />
             </a>
+
             <a
               href="https://wa.me/5521988840669"
               target="_blank"
@@ -95,6 +117,15 @@ const HeroSection = () => {
           </div>
         </div>
 
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <button
+            onClick={() => scrollToSection("sobre")}
+            className="text-hero-foreground/40 hover:text-hero-foreground/60 transition-colors"
+          >
+            <ArrowDown size={24} />
+          </button>
+        </div>
       </div>
     </section>
   );
