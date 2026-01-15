@@ -1,73 +1,40 @@
-# Welcome to your Lovable project
+# Tadeu Tovar – Portfolio
 
-## Project info
+Este repositório contém o código-fonte do meu portfólio profissional, onde apresento minha atuação em **Automação de Processos, Dados e Inteligência Artificial aplicada a negócios**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+O objetivo do site é centralizar:
+- minha apresentação profissional
+- principais áreas de atuação
+- experiências
+- tecnologias
+- formas de contato
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🛠️ Tecnologias utilizadas
 
-**Use Lovable**
+- React + Vite  
+- Tailwind CSS  
+- TypeScript  
+- Lucide Icons  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+A estrutura inicial e o design foram gerados com auxílio do **Lovable**, e posteriormente ajustados e customizados por mim para atender minhas necessidades profissionais.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🚀 Deploy
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+O projeto é publicado via **GitHub Pages** e pode ser acessado em:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+👉 **https://tadeutovar.github.io/**
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📬 Contato
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- LinkedIn: https://linkedin.com/in/tadeutovar  
+- GitHub: https://github.com/tadeutovar  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+> Este portfólio está em evolução contínua e será atualizado conforme novos projetos e experiências.
