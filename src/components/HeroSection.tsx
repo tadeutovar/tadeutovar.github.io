@@ -1,4 +1,4 @@
-import { ArrowDown, Linkedin, Github, Mail } from "lucide-react";
+import { ArrowDown, Linkedin, Github, MessageCircleMore } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -59,7 +59,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/tadeutovar/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 text-hero-foreground/60 hover:text-primary hover:bg-primary/10 rounded-full transition-all duration-300"
@@ -67,7 +67,7 @@ const HeroSection = () => {
               <Linkedin size={22} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/tadeutovar/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 text-hero-foreground/60 hover:text-primary hover:bg-primary/10 rounded-full transition-all duration-300"
@@ -75,10 +75,12 @@ const HeroSection = () => {
               <Github size={22} />
             </a>
             <a
-              href="mailto:contato@tadeu.com"
+              href="https://wa.me/5521988840669"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 text-hero-foreground/60 hover:text-primary hover:bg-primary/10 rounded-full transition-all duration-300"
             >
-              <Mail size={22} />
+              <MessageCircleMore size={22} />
             </a>
           </div>
         </div>

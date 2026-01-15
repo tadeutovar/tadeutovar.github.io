@@ -43,12 +43,12 @@ const AboutSection = () => {
               <div className="bg-secondary rounded-2xl p-8 md:p-10">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-4">
-                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">5+</div>
+                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">4+</div>
                     <div className="text-secondary-foreground/70 text-sm">Anos de Experiência</div>
                   </div>
                   <div className="text-center p-4">
-                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">20+</div>
-                    <div className="text-secondary-foreground/70 text-sm">Projetos Entregues</div>
+                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">10+</div>
+                    <div className="text-secondary-foreground/70 text-sm">Projetos Feitos</div>
                   </div>
                   <div className="text-center p-4">
                     <div className="text-4xl md:text-5xl font-bold text-primary mb-2">100%</div>

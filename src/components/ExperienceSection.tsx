@@ -4,11 +4,11 @@ const ExperienceSection = () => {
   const experiences = [
     {
       company: "Banco BOCOM BBM",
-      role: "Especialista em Automação e Dados",
-      period: "Atual",
+      role: "Estagiário de Product Manager",
+      period: "2024-2026",
       description: "Atuação em projeto de implementação de core bancário, com foco em automação de processos, análise e validação de dados, apoio em ETL, integração de sistemas e criação de dashboards para acompanhamento operacional.",
       highlights: [
-        "Implementação de core bancário",
+        "Implementação de sistema bancário",
         "Automação de processos operacionais",
         "Análise e validação de dados",
         "Integração de sistemas",
@@ -17,8 +17,8 @@ const ExperienceSection = () => {
     },
     {
       company: "Agência Na Praça",
-      role: "Analista de Dados e Automação",
-      period: "Anterior",
+      role: "Estagiário de Marketing",
+      period: "2021-2022",
       description: "Atuação com dados, automação de relatórios, análise de performance de campanhas e suporte à tomada de decisão através de indicadores e dashboards.",
       highlights: [
         "Automação de relatórios",

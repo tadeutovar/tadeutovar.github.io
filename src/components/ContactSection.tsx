@@ -5,19 +5,19 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/tadeu-tovar",
+      href: "https://www.linkedin.com/in/tadeutovar/",
       description: "Conecte-se comigo",
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/tadeu-tovar",
+      href: "https://github.com/tadeutovar",
       description: "Veja meus projetos",
     },
     {
       icon: Mail,
       label: "E-mail",
-      href: "mailto:contato@tadeu.com",
+      href: "mailto:tadeutovar@gmail.com",
       description: "Entre em contato",
     },
   ];
@@ -72,10 +72,12 @@ const ContactSection = () => {
 
           {/* CTA */}
           <a
-            href="mailto:contato@tadeu.com"
+            href="https://wa.me/5521988840669"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 group"
           >
-            <span>Enviar Mensagem</span>
+            <span>Whatsapp</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
