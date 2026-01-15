@@ -14,12 +14,19 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Sobre", href: "#sobre" },
-    { label: "Soluções", href: "#solucoes" },
-    { label: "Projetos", href: "#projetos" },
-    { label: "Experiência", href: "#experiencia" },
-    { label: "Contato", href: "#contato" },
+    { label: "Sobre", id: "sobre" },
+    { label: "Soluções", id: "solucoes" },
+    { label: "Projetos", id: "projetos" },
+    { label: "Experiência", id: "experiencia" },
+    { label: "Contato", id: "contato" },
   ];
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <header
@@ -31,27 +38,29 @@ const Header = () => {
     >
       <div className="container-custom">
         <nav className="flex items-center justify-between h-16 md:h-20">
-          <a
-            href="#"
+          <button
+            onClick={() => scrollToSection("home")}
             className={`text-lg font-semibold tracking-tight transition-colors ${
               isScrolled ? "text-foreground" : "text-hero-foreground"
             }`}
           >
             Tadeu Tovar
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
+              <li key={item.id}>
+                <button
+                  onClick={() => scrollToSection(item.id)}
                   className={`text-sm font-medium transition-colors hover:text-primary ${
-                    isScrolled ? "text-muted-foreground" : "text-hero-foreground/80"
+                    isScrolled
+                      ? "text-muted-foreground"
+                      : "text-hero-foreground/80"
                   }`}
                 >
                   {item.label}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
@@ -72,14 +81,16 @@ const Header = () => {
           <div className="md:hidden bg-card border-b border-border">
             <ul className="py-4 space-y-2">
               {navItems.map((item) => (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                <li key={item.id}>
+                  <button
+                    onClick={() => {
+                      scrollToSection(item.id);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="block w-full text-left px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                   >
                     {item.label}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>

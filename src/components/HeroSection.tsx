@@ -1,6 +1,12 @@
 import { ArrowDown, Linkedin, Github, MessageCircleMore } from "lucide-react";
 
 const HeroSection = () => {
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden">
       {/* Background Pattern */}
@@ -41,25 +47,29 @@ const HeroSection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <a
-              href="#contato"
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <button
+              onClick={() => scrollToSection("contato")}
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
             >
               Fale Comigo
-            </a>
-            <a
-              href="#projetos"
+            </button>
+
+            <button
+              onClick={() => scrollToSection("projetos")}
               className="inline-flex items-center gap-2 px-8 py-4 border border-hero-foreground/20 text-hero-foreground font-medium rounded-lg hover:bg-hero-foreground/5 transition-all duration-300"
             >
               Ver Projetos
-            </a>
+            </button>
           </div>
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <a
-              href="https://linkedin.com/tadeutovar/"
+              href="https://www.linkedin.com/in/tadeutovar/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 text-hero-foreground/60 hover:text-primary hover:bg-primary/10 rounded-full transition-all duration-300"
@@ -85,12 +95,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#sobre" className="text-hero-foreground/40 hover:text-hero-foreground/60 transition-colors">
-            <ArrowDown size={24} />
-          </a>
-        </div>
       </div>
     </section>
   );
